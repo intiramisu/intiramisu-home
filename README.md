@@ -3,6 +3,7 @@
 [intiramisu.com](https://intiramisu.com) のランディングページ。
 
 素の HTML だけの静的サイト。ビルド手順はなく、ページ自体は外部リソースを読み込まない（CSS はインライン、フォントはシステムスタック）。
+
 ```
 public/
   index.html    ページ本体
