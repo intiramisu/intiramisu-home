@@ -2,7 +2,9 @@
 
 [intiramisu.com](https://intiramisu.com) のランディングページ。
 
-素の HTML だけの静的サイト。ビルド手順はなく、外部へのリクエストも発生しない（CSS はインライン、フォントはシステムスタック）。
+素の HTML だけの静的サイト。ビルド手順はなく、ページ自体は外部リソースを読み込まない（CSS はインライン、フォントはシステムスタック）。
+
+例外として、Cloudflare Web Analytics を有効にしているため、ブラウザからのアクセスには Cloudflare が配信時に計測用スクリプト（`static.cloudflareinsights.com`）を自動で差し込む。Cookie は使わず、EU からの訪問者には差し込まない設定。HTML には含まれないので、リポジトリを見ても出てこない。
 
 ```
 public/
